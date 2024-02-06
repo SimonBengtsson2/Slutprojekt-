@@ -13,6 +13,42 @@ body {
     grid-template-rows: auto 1fr auto; /* Header, Main Content, Footer */
     min-height: 100vh;
     
+
+
+}
+.nav {
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 40px; /* Adjust as needed */
+    left: -200px; /* Hide the nav by default */
+    width: 200px;
+    overflow-y: auto; /* Adding scrollbar if content overflows */
+    transition: left 0.3s ease; /* Smooth transition for opening and closing */
+    border-top-right-radius: 20px; /* Rounded corners for the top right */
+    border-bottom-right-radius: 20px; /* Rounded corners for the bottom right */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.nav::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    background-color:#333;
+    border-top-left-radius: 5px; /* Rounded corners for the top left */
+    border-bottom-left-radius: 5px; /* Rounded corners for the bottom left */
+    margin-right: 10px;
+}
+
+.nav:hover {
+    background-color: #555; /* Change background color on hover */
+}
+
+.nav.open {
+    height: calc(100vh - 120px); /* Adjusted height based on header and footer */
+    top: 60px; /* Positioning below the header */
 }
 
 .header {
@@ -49,6 +85,41 @@ body {
         background-color: crimson;
     }
 
+    
+    .nav {
+        background-color: #444;
+        color: #fff;
+        padding: 20px;
+        position: fixed;
+        top: 40px; /* Adjust as needed */
+        left: -200px; /* Hide the nav by default */
+        width: 200px;
+        overflow-y: auto; /* Adding scrollbar if content overflows */
+        transition: left 0.3s ease; /* Smooth transition for opening and closing */
+        border-top-right-radius: 20px; /* Rounded corners for the top right */
+        border-bottom-right-radius: 20px; /* Rounded corners for the bottom right */
+        cursor: pointer; /* Change cursor to pointer on hover */
+    }
+    
+    .nav::before {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 15px;
+        background-color:#333;
+        border-top-left-radius: 5px; /* Rounded corners for the top left */
+        border-bottom-left-radius: 5px; /* Rounded corners for the bottom left */
+        margin-right: 10px;
+    }
+    
+    .nav:hover {
+        background-color: #555; /* Change background color on hover */
+    }
+    
+    .nav.open {
+        height: calc(100vh - 120px); /* Adjusted height based on header and footer */
+        top: 60px; /* Positioning below the header */
+    }
     .header {
         grid-area: header;
        
@@ -89,15 +160,36 @@ body2 {
     background-color: #444;
     color: #fff;
     padding: 20px;
-    height: calc(100vh - 120px); /* Adjusted height based on header and footer */
-    overflow-y: auto; /* Adding scrollbar if content overflows */
     position: fixed;
-    top: 60px; /* Positioning below the header */
+    top: 40px; /* Adjust as needed */
     left: -200px; /* Hide the nav by default */
     width: 200px;
+    overflow-y: auto; /* Adding scrollbar if content overflows */
     transition: left 0.3s ease; /* Smooth transition for opening and closing */
+    border-top-right-radius: 20px; /* Rounded corners for the top right */
+    border-bottom-right-radius: 20px; /* Rounded corners for the bottom right */
+    cursor: pointer; /* Change cursor to pointer on hover */
 }
 
+.nav2::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    background-color:#333;
+    border-top-left-radius: 5px; /* Rounded corners for the top left */
+    border-bottom-left-radius: 5px; /* Rounded corners for the bottom left */
+    margin-right: 10px;
+}
+
+.nav2:hover {
+    background-color: #555; /* Change background color on hover */
+}
+
+.nav2.open {
+    height: calc(100vh - 120px); /* Adjusted height based on header and footer */
+    top: 60px; /* Positioning below the header */
+}
 
 
 .grid-container2 {
@@ -147,4 +239,10 @@ body2 {
     padding: 10px;
     background-color: crimson;
     height: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+    .main2 {
+        grid-template-columns: repeat(2, 1fr); /* Single column for mobile */
+    }
 }
