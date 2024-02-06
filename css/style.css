@@ -302,7 +302,7 @@ body2 {
 /* Styles for open state */
 .nav3.open {
     height: calc(100vh - 120px); /* Adjusted height based on header and footer */
-    top: 60px; /* Positioning below the header */
+    top: 40px; /* Positioning below the header */
 }
 
 
@@ -330,7 +330,7 @@ body2 {
 
 .rekomendation {
     background-color: #444;
-    color: #fff;
+
     padding: 20px;
     position: fixed;
     top: 100px; /* Adjust as needed */
@@ -348,7 +348,7 @@ body2 {
     display: inline-block;
     width: 10px;
     height: 15px;
-    background-color: #fff;
+    background-color: #444;
     border-top-left-radius: 5px; /* Rounded corners for the top left */
     border-bottom-left-radius: 5px; /* Rounded corners for the bottom left */
     margin-right: 10px;
@@ -356,5 +356,5 @@ body2 {
 
 .rekomendation.open {
     height: calc(100vh - 180px); /* Adjusted height based on header, footer, and nav */
-    top: 140px; /* Positioning below the clickable nav part */
+    top: 100px; /* Positioning below the clickable nav part */
 }
