@@ -36,7 +36,7 @@ body {
     display: inline-block;
     width: 10px;
     height: 15px;
-    background-color:#333;
+    background-color:#444;
     border-top-left-radius: 5px; /* Rounded corners for the top left */
     border-bottom-left-radius: 5px; /* Rounded corners for the bottom left */
     margin-right: 10px;
@@ -106,7 +106,7 @@ body {
         display: inline-block;
         width: 10px;
         height: 15px;
-        background-color:#333;
+        background-color:#444;
         border-top-left-radius: 5px; /* Rounded corners for the top left */
         border-bottom-left-radius: 5px; /* Rounded corners for the bottom left */
         margin-right: 10px;
@@ -176,7 +176,7 @@ body2 {
     display: inline-block;
     width: 10px;
     height: 15px;
-    background-color:#333;
+    background-color:#444;
     border-top-left-radius: 5px; /* Rounded corners for the top left */
     border-bottom-left-radius: 5px; /* Rounded corners for the bottom left */
     margin-right: 10px;
@@ -245,4 +245,116 @@ body2 {
     .main2 {
         grid-template-columns: repeat(2, 1fr); /* Single column for mobile */
     }
+}
+
+
+
+
+.grid-container3 {
+    display: grid;
+    grid-template-areas: 
+        "header header header header"
+        "nav main main main"
+        "footer footer footer footer";
+    grid-template-rows: auto 1fr auto; /* Header, Main Content, Footer */
+    min-height: 100vh;
+}
+
+/* Adjusted CSS for Main Content */
+.main3 {
+    grid-area: main;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-items: center; /* Centering the cards horizontally */
+}
+
+
+
+.nav3 {
+    background-color: #444;
+  
+    padding: 20px;
+    position: fixed;
+    top: 40px; /* Adjust as needed */
+    left: -200px; /* Hide the nav by default */
+    width: 200px;
+    overflow-y: auto; /* Adding scrollbar if content overflows */
+    transition: left 0.3s ease; /* Smooth transition for opening and closing */
+    border-top-right-radius: 20px; /* Rounded corners for the top right */
+    border-bottom-right-radius: 20px; /* Rounded corners for the bottom right */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Styles for pseudo-element */
+.nav3::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    background-color:#444;
+    border-top-left-radius: 5px; /* Rounded corners for the top left */
+    border-bottom-left-radius: 5px; /* Rounded corners for the bottom left */
+    margin-right: 10px;
+}
+
+/* Styles for open state */
+.nav3.open {
+    height: calc(100vh - 120px); /* Adjusted height based on header and footer */
+    top: 60px; /* Positioning below the header */
+}
+
+
+.header3 {
+    grid-area: header;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    background-color: blue;
+    height: 50px;
+}
+
+
+
+.footer3 {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    background-color: crimson;
+    height: 50px;
+}
+
+
+
+.rekomendation {
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 100px; /* Adjust as needed */
+    left: -200px; /* Hide the box by default */
+    width: 200px;
+    overflow-y: auto; /* Adding scrollbar if content overflows */
+    transition: left 0.3s ease; /* Smooth transition for opening and closing */
+    border-top-right-radius: 20px; /* Rounded corners for the top right */
+    border-bottom-right-radius: 20px; /* Rounded corners for the bottom right */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.rekomendation::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    background-color: #fff;
+    border-top-left-radius: 5px; /* Rounded corners for the top left */
+    border-bottom-left-radius: 5px; /* Rounded corners for the bottom left */
+    margin-right: 10px;
+}
+
+.rekomendation.open {
+    height: calc(100vh - 180px); /* Adjusted height based on header, footer, and nav */
+    top: 140px; /* Positioning below the clickable nav part */
 }
