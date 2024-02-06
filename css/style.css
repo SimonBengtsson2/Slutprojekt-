@@ -358,3 +358,9 @@ body2 {
     height: calc(100vh - 180px); /* Adjusted height based on header, footer, and nav */
     top: 100px; /* Positioning below the clickable nav part */
 }
+
+
+
+a{
+ color: red;
+}
