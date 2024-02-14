@@ -6,29 +6,39 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "header"
         "main"
         "footer";
-    grid-template-rows: auto 1fr auto; /* Header, Main Content, Footer */
+    grid-template-rows: auto 1fr auto;
+    /* Header, Main Content, Footer */
     min-height: 100vh;
-    
-
-
+    color: #FF4C4C;
+    background-color: #2E2F31;
 }
+
 .nav {
-    background-color: #444;
+    background-color: #191B1D;
+    /* Opera GX dark background */
 
     padding: 20px;
     position: fixed;
-    top: 40px; /* Adjust as needed */
-    left: -200px; /* Hide the nav by default */
+    top: 40px;
+    /* Adjust as needed */
+    left: -200px;
+    /* Hide the nav by default */
     width: 200px;
-    overflow-y: auto; /* Adding scrollbar if content overflows */
-    transition: left 0.3s ease; /* Smooth transition for opening and closing */
-    border-top-right-radius: 20px; /* Rounded corners for the top right */
-    border-bottom-right-radius: 20px; /* Rounded corners for the bottom right */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    overflow-y: auto;
+    /* Adding scrollbar if content overflows */
+    transition: left 0.3s ease;
+    /* Smooth transition for opening and closing */
+    border-top-right-radius: 20px;
+    /* Rounded corners for the top right */
+    border-bottom-right-radius: 20px;
+    /* Rounded corners for the bottom right */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    color: #FF4C4C;
 }
 
 .nav::before {
@@ -36,120 +46,140 @@ body {
     display: inline-block;
     width: 10px;
     height: 15px;
-    background-color:#444;
-    border-top-left-radius: 5px; /* Rounded corners for the top left */
-    border-bottom-left-radius: 5px; /* Rounded corners for the bottom left */
+    background-color: #191B1D;
+    /* Opera GX dark background */
+    border-top-left-radius: 5px;
+    /* Rounded corners for the top left */
+    border-bottom-left-radius: 5px;
+    /* Rounded corners for the bottom left */
     margin-right: 10px;
+    color: #FF4C4C;
 }
 
-.nav:hover {
-    background-color: #555; /* Change background color on hover */
-}
 
 .nav.open {
-    height: calc(100vh - 120px); /* Adjusted height based on header and footer */
-    top: 40px; /* Positioning below the header */
+    height: calc(100vh - 120px);
+    /* Adjusted height based on header and footer */
+    top: 40px;
+    /* Positioning below the header */
+    color: #FF4C4C;
 }
 
 .header {
     grid-area: header;
-    background-color: #333;
-    color: #fff;
+    background-color: #202122;
+    /* Opera GX extra dark background */
+    color: #FF4C4C;
     padding: 10px;
-    background-color: blue;
     height: 50px;
 }
 
 .main {
     grid-area: main;
     padding: 20px;
+    background-color: #2E2F31;
+    /* Opera GX dark background */
+    color: #FF4C4C;
+    /* Opera's signature red text color */
 }
 
 .footer {
     grid-area: footer;
-    background-color: #333;
-    color: #fff;
+    background-color: #202122;
+    /* Opera GX extra dark background */
+    color: #FF4C4C;
     padding: 10px;
-    background-color: crimson;
     height: 50px;
 }
 
 @media only screen and (max-width: 767px) {
     .grid-container {
-        grid-template-areas: 
+        grid-template-areas:
             "header"
             "main"
             "footer";
-        grid-template-rows: auto 1fr auto; /* Header, Main Content, Footer */
+        grid-template-rows: auto 1fr auto;
+        /* Header, Main Content, Footer */
         min-height: 100vh;
-        background-color: crimson;
+        color: #FF4C4C;
     }
 
-    
     .nav {
-        background-color: #444;
-   
+        background-color: #191B1D;
+        /* Opera GX dark background */
+
         padding: 20px;
         position: fixed;
-        top: 40px; /* Adjust as needed */
-        left: -200px; /* Hide the nav by default */
+        top: 40px;
+        /* Adjust as needed */
+        left: -200px;
+        /* Hide the nav by default */
         width: 200px;
-        overflow-y: auto; /* Adding scrollbar if content overflows */
-        transition: left 0.3s ease; /* Smooth transition for opening and closing */
-        border-top-right-radius: 20px; /* Rounded corners for the top right */
-        border-bottom-right-radius: 20px; /* Rounded corners for the bottom right */
-        cursor: pointer; /* Change cursor to pointer on hover */
+        overflow-y: auto;
+        /* Adding scrollbar if content overflows */
+        transition: left 0.3s ease;
+        /* Smooth transition for opening and closing */
+        border-top-right-radius: 20px;
+        /* Rounded corners for the top right */
+        border-bottom-right-radius: 20px;
+        /* Rounded corners for the bottom right */
+        cursor: pointer;
+        /* Change cursor to pointer on hover */
+        color: #FF4C4C;
     }
-    
+
     .nav::before {
         content: '';
         display: inline-block;
         width: 10px;
         height: 15px;
-        background-color:#444;
-        border-top-left-radius: 5px; /* Rounded corners for the top left */
-        border-bottom-left-radius: 5px; /* Rounded corners for the bottom left */
+        background-color: #191B1D;
+        /* Opera GX dark background */
+        border-top-left-radius: 5px;
+        /* Rounded corners for the top left */
+        border-bottom-left-radius: 5px;
+        /* Rounded corners for the bottom left */
         margin-right: 10px;
+        color: #FF4C4C;
     }
-    
-    .nav:hover {
-        background-color: #555; /* Change background color on hover */
-    }
-    
+
+   
+
     .nav.open {
-        height: calc(100vh - 120px); /* Adjusted height based on header and footer */
-        top: 40px; /* Positioning below the header */
+        height: calc(100vh - 120px);
+        /* Adjusted height based on header and footer */
+        top: 40px;
+        /* Positioning below the header */
+        color: #FF4C4C;
     }
+
     .header {
         grid-area: header;
-       
-        color: #fff;
+        background-color: #202122;
+        /* Opera GX extra dark background */
+        color: #FF4C4C;
         padding: 10px;
-        background-color: blue;
         height: 50px;
     }
 
     .main {
         grid-area: main;
         padding: 20px;
-        background-color: chartreuse;
+        background-color: #2E2F31;
+        /* Opera GX dark background */
+        color: #FF4C4C;
+        /* Opera's signature red text color */
     }
 
     .footer {
         grid-area: footer;
-        background-color: #333;
-
+        background-color: #202122;
+        /* Opera GX extra dark background */
+        color: #FF4C4C;
         padding: 10px;
         height: 50px;
     }
 }
-
-body2 {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
 
 
 
@@ -157,18 +187,26 @@ body2 {
 
 
 .nav2 {
-    background-color: #444;
-    
+    background-color: #191B1D;
+
     padding: 20px;
     position: fixed;
-    top: 40px; /* Adjust as needed */
-    left: -200px; /* Hide the nav by default */
+    top: 40px;
+    /* Adjust as needed */
+    left: -200px;
+    /* Hide the nav by default */
     width: 200px;
-    overflow-y: auto; /* Adding scrollbar if content overflows */
-    transition: left 0.3s ease; /* Smooth transition for opening and closing */
-    border-top-right-radius: 20px; /* Rounded corners for the top right */
-    border-bottom-right-radius: 20px; /* Rounded corners for the bottom right */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    overflow-y: auto;
+    /* Adding scrollbar if content overflows */
+    transition: left 0.3s ease;
+    /* Smooth transition for opening and closing */
+    border-top-right-radius: 20px;
+    /* Rounded corners for the top right */
+    border-bottom-right-radius: 20px;
+    /* Rounded corners for the bottom right */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    color: #FF4C4C;
 }
 
 .nav2::before {
@@ -176,30 +214,36 @@ body2 {
     display: inline-block;
     width: 10px;
     height: 15px;
-    background-color:#444;
-    border-top-left-radius: 5px; /* Rounded corners for the top left */
-    border-bottom-left-radius: 5px; /* Rounded corners for the bottom left */
+    background-color: #191B1D;
+    border-top-left-radius: 5px;
+    /* Rounded corners for the top left */
+    border-bottom-left-radius: 5px;
+    /* Rounded corners for the bottom left */
     margin-right: 10px;
+    color: #FF4C4C;
 }
 
-.nav2:hover {
-    background-color: #555; /* Change background color on hover */
-}
 
 .nav2.open {
-    height: calc(100vh - 120px); /* Adjusted height based on header and footer */
-    top: 40px; /* Positioning below the header */
+    height: calc(100vh - 120px);
+    /* Adjusted height based on header and footer */
+    top: 40px;
+    /* Positioning below the header */
+    color: #FF4C4C
 }
 
 
 .grid-container2 {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "header header header header"
         "nav main main main"
         "footer footer footer footer";
-    grid-template-rows: auto 1fr auto; /* Header, Main Content, Footer */
+    grid-template-rows: auto 1fr auto;
+    /* Header, Main Content, Footer */
     min-height: 100vh;
+    color: #FF4C4C;
+    background-color: #2E2F31;
 }
 
 /* Adjusted CSS for Main Content */
@@ -209,41 +253,54 @@ body2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
-    justify-items: center; /* Centering the cards horizontally */
+    justify-items: center;
+    /* Centering the cards horizontally */
+    color: #FF4C4C;
+    background-color: #2E2F31;
+
 }
 
 /* Adjusted CSS for Cards */
 .card {
-    background-color: #f4f4f4;
+    background-color: black;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
-    width: 100px; /* Adjust width as needed */
-    height: 100px; /* Ensure square dimensions */
+    width: 100px;
+    /* Adjust width as needed */
+    height: 100px;
+    /* Ensure square dimensions */
+    color: #FF4C4C;
+    border: 1px solid #FF4C4C;
+    /* Red border */
 }
+
 .header2 {
     grid-area: header;
-    background-color: #333;
-    color: #fff;
+    background-color: #202122;
+
     padding: 10px;
-    background-color: blue;
+
     height: 50px;
+    color: #FF4C4C;
 }
 
 
 
 .footer2 {
     grid-area: footer;
-    background-color: #333;
-    color: #fff;
+    background-color: #202122;
+
     padding: 10px;
-    background-color: crimson;
+
     height: 50px;
+    color: #FF4C4C;
 }
 
 @media only screen and (max-width: 767px) {
     .main2 {
-        grid-template-columns: repeat(2, 1fr); /* Single column for mobile */
+        grid-template-columns: repeat(2, 1fr);
+        /* Single column for mobile */
     }
 }
 
@@ -252,12 +309,14 @@ body2 {
 
 .grid-container3 {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "header header header header"
         "nav main main main"
         "footer footer footer footer";
-    grid-template-rows: auto 1fr auto; /* Header, Main Content, Footer */
+    grid-template-rows: auto 1fr auto;
+    /* Header, Main Content, Footer */
     min-height: 100vh;
+    background-color: #2E2F31;
 }
 
 /* Adjusted CSS for Main Content */
@@ -267,24 +326,35 @@ body2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
-    justify-items: center; /* Centering the cards horizontally */
+    justify-items: center;
+    /* Centering the cards horizontally */
+    color: #FF4C4C;
+    background-color: #2E2F31;
 }
 
 
 
 .nav3 {
-    background-color: #444;
-  
+    background-color: #191B1D;
+
     padding: 20px;
     position: fixed;
-    top: 40px; /* Adjust as needed */
-    left: -200px; /* Hide the nav by default */
+    top: 40px;
+    /* Adjust as needed */
+    left: -200px;
+    /* Hide the nav by default */
     width: 200px;
-    overflow-y: auto; /* Adding scrollbar if content overflows */
-    transition: left 0.3s ease; /* Smooth transition for opening and closing */
-    border-top-right-radius: 20px; /* Rounded corners for the top right */
-    border-bottom-right-radius: 20px; /* Rounded corners for the bottom right */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    overflow-y: auto;
+    /* Adding scrollbar if content overflows */
+    transition: left 0.3s ease;
+    /* Smooth transition for opening and closing */
+    border-top-right-radius: 20px;
+    /* Rounded corners for the top right */
+    border-bottom-right-radius: 20px;
+    /* Rounded corners for the bottom right */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    color: #FF4C4C;
 }
 
 /* Styles for pseudo-element */
@@ -293,25 +363,32 @@ body2 {
     display: inline-block;
     width: 10px;
     height: 15px;
-    background-color:#444;
-    border-top-left-radius: 5px; /* Rounded corners for the top left */
-    border-bottom-left-radius: 5px; /* Rounded corners for the bottom left */
+    background-color: #191B1D;
+    border-top-left-radius: 5px;
+    /* Rounded corners for the top left */
+    border-bottom-left-radius: 5px;
+    /* Rounded corners for the bottom left */
     margin-right: 10px;
+    color: #FF4C4C;
 }
+
+
 
 /* Styles for open state */
 .nav3.open {
-    height: calc(100vh - 120px); /* Adjusted height based on header and footer */
-    top: 40px; /* Positioning below the header */
+    height: calc(100vh - 120px);
+    /* Adjusted height based on header and footer */
+    top: 40px;
+    /* Positioning below the header */
+    color: #FF4C4C;
 }
 
 
 .header3 {
     grid-area: header;
-    background-color: #333;
-    color: #fff;
+    color: #FF4C4C;
     padding: 10px;
-    background-color: blue;
+    background-color: #202122;
     height: 50px;
 }
 
@@ -319,28 +396,35 @@ body2 {
 
 .footer3 {
     grid-area: footer;
-    background-color: #333;
-    color: #fff;
+    color: #FF4C4C;
     padding: 10px;
-    background-color: crimson;
+    background-color: #202122;
     height: 50px;
 }
 
 
 
 .rekomendation {
-    background-color: #444;
+    background-color: #191B1D;
 
     padding: 20px;
     position: fixed;
-    top: 100px; /* Adjust as needed */
-    left: -200px; /* Hide the box by default */
+    top: 100px;
+    /* Adjust as needed */
+    left: -200px;
+    /* Hide the box by default */
     width: 200px;
-    overflow-y: auto; /* Adding scrollbar if content overflows */
-    transition: left 0.3s ease; /* Smooth transition for opening and closing */
-    border-top-right-radius: 20px; /* Rounded corners for the top right */
-    border-bottom-right-radius: 20px; /* Rounded corners for the bottom right */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    overflow-y: auto;
+    /* Adding scrollbar if content overflows */
+    transition: left 0.3s ease;
+    /* Smooth transition for opening and closing */
+    border-top-right-radius: 20px;
+    /* Rounded corners for the top right */
+    border-bottom-right-radius: 20px;
+    /* Rounded corners for the bottom right */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    color: #FF4C4C;
 }
 
 .rekomendation::before {
@@ -348,19 +432,198 @@ body2 {
     display: inline-block;
     width: 10px;
     height: 15px;
-    background-color: #444;
-    border-top-left-radius: 5px; /* Rounded corners for the top left */
-    border-bottom-left-radius: 5px; /* Rounded corners for the bottom left */
+    background-color: #191B1D;
+    border-top-left-radius: 5px;
+    /* Rounded corners for the top left */
+    border-bottom-left-radius: 5px;
+    /* Rounded corners for the bottom left */
     margin-right: 10px;
+    color: #FF4C4C;
 }
+
+
 
 .rekomendation.open {
-    height: calc(100vh - 180px); /* Adjusted height based on header, footer, and nav */
-    top: 100px; /* Positioning below the clickable nav part */
+    height: calc(100vh - 180px);
+    /* Adjusted height based on header, footer, and nav */
+    top: 100px;
+    /* Positioning below the clickable nav part */
+    color: #FF4C4C;
 }
 
 
 
-a{
- color: red;
+a {
+    color: #FF4C4C;
+}
+
+
+
+
+
+
+
+/* Global Styles */
+body {
+
+    font-family: Arial, sans-serif;
+}
+
+.grid-container-about {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main-about"
+        "footer";
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+    background-color: #2E2F31;
+}
+
+.header-about {
+    grid-area: header;
+    background-color: #202122;
+
+    padding: 10px;
+    text-align: center;
+    color: #FF4C4C;
+}
+
+
+
+
+.main-about {
+    grid-area: main-about;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    color: #FF4C4C;
+    background-color: #2E2F31;
+}
+
+
+.box-about {
+
+    padding: 20px;
+    border-radius: 5px;
+    color: #FF4C4C;
+    background-color: #2E2F31;
+    border: 1px solid #FF4C4C;
+    /* Red border */
+}
+
+.footer-about {
+    grid-area: footer;
+    background-color: #202122;
+    color: #FF4C4C;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-about {
+    background-color: #191B1D;
+
+    padding: 20px;
+    position: fixed;
+    top: 40px;
+    /* Adjust as needed */
+    left: -200px;
+    /* Hide the nav by default */
+    width: 200px;
+    overflow-y: auto;
+    /* Adding scrollbar if content overflows */
+    transition: left 0.3s ease;
+    /* Smooth transition for opening and closing */
+    border-top-right-radius: 20px;
+    /* Rounded corners for the top right */
+    border-bottom-right-radius: 20px;
+    /* Rounded corners for the bottom right */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    color: #FF4C4C;
+}
+
+.nav-about::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    background-color: #191B1D;
+    border-top-left-radius: 5px;
+    /* Rounded corners for the top left */
+    border-bottom-left-radius: 5px;
+    /* Rounded corners for the bottom left */
+    margin-right: 10px;
+    color: #FF4C4C;
+}
+
+
+
+.nav-about.open {
+    height: calc(100vh - 120px);
+    /* Adjusted height based on header and footer */
+    top: 40px;
+    /* Positioning below the header */
+    color: #FF4C4C;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .grid-container-about {
+        grid-template-areas:
+            "header"
+            "main-about"
+            "footer";
+        grid-template-rows: auto 1fr auto;
+        /* Header, Main Content, Footer */
+        min-height: 100vh;
+    }
+
+    .nav {
+        background-color: #191B1D;
+
+        padding: 20px;
+        position: fixed;
+        top: 40px;
+        /* Adjust as needed */
+        left: -200px;
+        /* Hide the nav by default */
+        width: 200px;
+        overflow-y: auto;
+        /* Adding scrollbar if content overflows */
+        transition: left 0.3s ease;
+        /* Smooth transition for opening and closing */
+        border-top-right-radius: 20px;
+        /* Rounded corners for the top right */
+        border-bottom-right-radius: 20px;
+        /* Rounded corners for the bottom right */
+        cursor: pointer;
+        /* Change cursor to pointer on hover */
+        color: #FF4C4C;
+    }
+
+    .nav::before {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 15px;
+        background-color: #191B1D;
+        border-top-left-radius: 5px;
+        /* Rounded corners for the top left */
+        border-bottom-left-radius: 5px;
+        /* Rounded corners for the bottom left */
+        margin-right: 10px;
+        color: #FF4C4C;
+    }
+
+
+    .nav.open {
+        height: calc(100vh - 120px);
+        /* Adjusted height based on header and footer */
+        top: 40px;
+        /* Positioning below the header */
+        color: #FF4C4C;
+    }
 }

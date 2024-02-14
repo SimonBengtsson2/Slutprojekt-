@@ -115,3 +115,36 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const nav = document.querySelector('.nav-about'); // Updated class name
+    const main = document.querySelector('.main-about'); // Updated class name
+
+    // Function to toggle the visibility of the navigation menu
+    function toggleNav() {
+        if (nav.classList.contains('open')) {
+            nav.style.left = '-200px';
+            main.style.marginLeft = '0';
+            nav.classList.remove('open');
+        } else {
+            nav.style.left = '0px';
+            main.style.marginLeft = '200px';
+            nav.classList.add('open');
+        }
+    }
+
+    // Event listener to toggle the navigation menu when clicking
+    document.addEventListener('click', function(event) {
+        if (event.clientX < 200) { // Clicked on the left side of the screen
+            toggleNav();
+        } else if (event.target.closest('.nav-about') === null) { // Clicked outside the navigation
+            if (nav.classList.contains('open')) {
+                toggleNav();
+            }
+        }
+    });
+});
