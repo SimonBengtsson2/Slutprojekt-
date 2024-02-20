@@ -3,6 +3,38 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
 }
+.nav, .nav2, .nav3, .nav-about {
+    background-color: #191B1D;
+    padding: 20px;
+    position: fixed;
+    top: 40px;
+    left: -200px;
+    width: 200px;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    color: #FF4C4C;
+}
+
+.nav::before, .nav2::before, .nav3::before, .nav-about::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    background-color: #191B1D;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-right: 10px;
+    color: #FF4C4C;
+}
+
+.nav.open, .nav2.open, .nav3.open, .nav-about.open {
+    height: calc(100vh - 120px);
+    top: 40px;
+    color: #FF4C4C;
+}
 
 .grid-container {
     display: grid;
@@ -17,53 +49,6 @@ body {
     background-color: #2E2F31;
 }
 
-.nav {
-    background-color: #191B1D;
-    /* Opera GX dark background */
-
-    padding: 20px;
-    position: fixed;
-    top: 40px;
-    /* Adjust as needed */
-    left: -200px;
-    /* Hide the nav by default */
-    width: 200px;
-    overflow-y: auto;
-    /* Adding scrollbar if content overflows */
-    transition: left 0.3s ease;
-    /* Smooth transition for opening and closing */
-    border-top-right-radius: 20px;
-    /* Rounded corners for the top right */
-    border-bottom-right-radius: 20px;
-    /* Rounded corners for the bottom right */
-    cursor: pointer;
-    /* Change cursor to pointer on hover */
-    color: #FF4C4C;
-}
-
-.nav::before {
-    content: '';
-    display: inline-block;
-    width: 10px;
-    height: 15px;
-    background-color: #191B1D;
-    /* Opera GX dark background */
-    border-top-left-radius: 5px;
-    /* Rounded corners for the top left */
-    border-bottom-left-radius: 5px;
-    /* Rounded corners for the bottom left */
-    margin-right: 10px;
-    color: #FF4C4C;
-}
-
-
-.nav.open {
-    height: calc(100vh - 120px);
-    /* Adjusted height based on header and footer */
-    top: 40px;
-    /* Positioning below the header */
-    color: #FF4C4C;
-}
 
 .header {
     grid-area: header;
@@ -104,54 +89,7 @@ body {
         color: #FF4C4C;
     }
 
-    .nav {
-        background-color: #191B1D;
-        /* Opera GX dark background */
 
-        padding: 20px;
-        position: fixed;
-        top: 40px;
-        /* Adjust as needed */
-        left: -200px;
-        /* Hide the nav by default */
-        width: 200px;
-        overflow-y: auto;
-        /* Adding scrollbar if content overflows */
-        transition: left 0.3s ease;
-        /* Smooth transition for opening and closing */
-        border-top-right-radius: 20px;
-        /* Rounded corners for the top right */
-        border-bottom-right-radius: 20px;
-        /* Rounded corners for the bottom right */
-        cursor: pointer;
-        /* Change cursor to pointer on hover */
-        color: #FF4C4C;
-    }
-
-    .nav::before {
-        content: '';
-        display: inline-block;
-        width: 10px;
-        height: 15px;
-        background-color: #191B1D;
-        /* Opera GX dark background */
-        border-top-left-radius: 5px;
-        /* Rounded corners for the top left */
-        border-bottom-left-radius: 5px;
-        /* Rounded corners for the bottom left */
-        margin-right: 10px;
-        color: #FF4C4C;
-    }
-
-   
-
-    .nav.open {
-        height: calc(100vh - 120px);
-        /* Adjusted height based on header and footer */
-        top: 40px;
-        /* Positioning below the header */
-        color: #FF4C4C;
-    }
 
     .header {
         grid-area: header;
@@ -186,52 +124,6 @@ body {
 
 
 
-.nav2 {
-    background-color: #191B1D;
-
-    padding: 20px;
-    position: fixed;
-    top: 40px;
-    /* Adjust as needed */
-    left: -200px;
-    /* Hide the nav by default */
-    width: 200px;
-    overflow-y: auto;
-    /* Adding scrollbar if content overflows */
-    transition: left 0.3s ease;
-    /* Smooth transition for opening and closing */
-    border-top-right-radius: 20px;
-    /* Rounded corners for the top right */
-    border-bottom-right-radius: 20px;
-    /* Rounded corners for the bottom right */
-    cursor: pointer;
-    /* Change cursor to pointer on hover */
-    color: #FF4C4C;
-}
-
-.nav2::before {
-    content: '';
-    display: inline-block;
-    width: 10px;
-    height: 15px;
-    background-color: #191B1D;
-    border-top-left-radius: 5px;
-    /* Rounded corners for the top left */
-    border-bottom-left-radius: 5px;
-    /* Rounded corners for the bottom left */
-    margin-right: 10px;
-    color: #FF4C4C;
-}
-
-
-.nav2.open {
-    height: calc(100vh - 120px);
-    /* Adjusted height based on header and footer */
-    top: 40px;
-    /* Positioning below the header */
-    color: #FF4C4C
-}
-
 
 .grid-container2 {
     display: grid;
@@ -252,12 +144,12 @@ body {
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto); /* Three rows */
     grid-gap: 20px;
     justify-items: center;
     /* Centering the cards horizontally */
     color: #FF4C4C;
     background-color: #2E2F31;
-
 }
 
 /* Adjusted CSS for Cards */
@@ -273,6 +165,13 @@ body {
     color: #FF4C4C;
     border: 1px solid #FF4C4C;
     /* Red border */
+    font-size: smaller;
+}
+.card img {
+    max-width: 100%; /* Ensure the image doesn't exceed the card width */
+    max-height: 100%; /* Ensure the image doesn't exceed the card height */
+    display: block; /* Remove any default spacing */
+    margin: auto; /* Center the image horizontally */
 }
 
 .header2 {
@@ -298,12 +197,17 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
-    .main2 {
-        grid-template-columns: repeat(2, 1fr);
-        /* Single column for mobile */
+    .grid-container2 {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for mobile */
+       
     }
-}
 
+    .main2 {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for mobile */
+        grid-template-rows: repeat(6,auto); /* Six rows for mobile */
+    }
+    
+}
 
 
 
@@ -334,54 +238,6 @@ body {
 
 
 
-.nav3 {
-    background-color: #191B1D;
-
-    padding: 20px;
-    position: fixed;
-    top: 40px;
-    /* Adjust as needed */
-    left: -200px;
-    /* Hide the nav by default */
-    width: 200px;
-    overflow-y: auto;
-    /* Adding scrollbar if content overflows */
-    transition: left 0.3s ease;
-    /* Smooth transition for opening and closing */
-    border-top-right-radius: 20px;
-    /* Rounded corners for the top right */
-    border-bottom-right-radius: 20px;
-    /* Rounded corners for the bottom right */
-    cursor: pointer;
-    /* Change cursor to pointer on hover */
-    color: #FF4C4C;
-}
-
-/* Styles for pseudo-element */
-.nav3::before {
-    content: '';
-    display: inline-block;
-    width: 10px;
-    height: 15px;
-    background-color: #191B1D;
-    border-top-left-radius: 5px;
-    /* Rounded corners for the top left */
-    border-bottom-left-radius: 5px;
-    /* Rounded corners for the bottom left */
-    margin-right: 10px;
-    color: #FF4C4C;
-}
-
-
-
-/* Styles for open state */
-.nav3.open {
-    height: calc(100vh - 120px);
-    /* Adjusted height based on header and footer */
-    top: 40px;
-    /* Positioning below the header */
-    color: #FF4C4C;
-}
 
 
 .header3 {
@@ -463,11 +319,6 @@ a {
 
 
 
-/* Global Styles */
-body {
-
-    font-family: Arial, sans-serif;
-}
 
 .grid-container-about {
     display: grid;
@@ -522,52 +373,7 @@ body {
     text-align: center;
 }
 
-.nav-about {
-    background-color: #191B1D;
 
-    padding: 20px;
-    position: fixed;
-    top: 40px;
-    /* Adjust as needed */
-    left: -200px;
-    /* Hide the nav by default */
-    width: 200px;
-    overflow-y: auto;
-    /* Adding scrollbar if content overflows */
-    transition: left 0.3s ease;
-    /* Smooth transition for opening and closing */
-    border-top-right-radius: 20px;
-    /* Rounded corners for the top right */
-    border-bottom-right-radius: 20px;
-    /* Rounded corners for the bottom right */
-    cursor: pointer;
-    /* Change cursor to pointer on hover */
-    color: #FF4C4C;
-}
-
-.nav-about::before {
-    content: '';
-    display: inline-block;
-    width: 10px;
-    height: 15px;
-    background-color: #191B1D;
-    border-top-left-radius: 5px;
-    /* Rounded corners for the top left */
-    border-bottom-left-radius: 5px;
-    /* Rounded corners for the bottom left */
-    margin-right: 10px;
-    color: #FF4C4C;
-}
-
-
-
-.nav-about.open {
-    height: calc(100vh - 120px);
-    /* Adjusted height based on header and footer */
-    top: 40px;
-    /* Positioning below the header */
-    color: #FF4C4C;
-}
 
 
 @media only screen and (max-width: 767px) {
@@ -581,49 +387,4 @@ body {
         min-height: 100vh;
     }
 
-    .nav {
-        background-color: #191B1D;
-
-        padding: 20px;
-        position: fixed;
-        top: 40px;
-        /* Adjust as needed */
-        left: -200px;
-        /* Hide the nav by default */
-        width: 200px;
-        overflow-y: auto;
-        /* Adding scrollbar if content overflows */
-        transition: left 0.3s ease;
-        /* Smooth transition for opening and closing */
-        border-top-right-radius: 20px;
-        /* Rounded corners for the top right */
-        border-bottom-right-radius: 20px;
-        /* Rounded corners for the bottom right */
-        cursor: pointer;
-        /* Change cursor to pointer on hover */
-        color: #FF4C4C;
-    }
-
-    .nav::before {
-        content: '';
-        display: inline-block;
-        width: 10px;
-        height: 15px;
-        background-color: #191B1D;
-        border-top-left-radius: 5px;
-        /* Rounded corners for the top left */
-        border-bottom-left-radius: 5px;
-        /* Rounded corners for the bottom left */
-        margin-right: 10px;
-        color: #FF4C4C;
-    }
-
-
-    .nav.open {
-        height: calc(100vh - 120px);
-        /* Adjusted height based on header and footer */
-        top: 40px;
-        /* Positioning below the header */
-        color: #FF4C4C;
-    }
 }
