@@ -65,6 +65,10 @@ body {
     background-color: #2E2F31;
     /* Opera GX dark background */
     color: #FF4C4C;
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     /* Opera's signature red text color */
 }
 
@@ -103,10 +107,12 @@ body {
     .main {
         grid-area: main;
         padding: 20px;
-        background-color: #2E2F31;
+       
         /* Opera GX dark background */
         color: #FF4C4C;
         /* Opera's signature red text color */
+    
+        background-color: #2E2F31;
     }
 
     .footer {
