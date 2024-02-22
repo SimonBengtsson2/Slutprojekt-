@@ -62,7 +62,7 @@ body {
 .main {
     grid-area: main;
     padding: 20px;
-    background-color: #2E2F31;
+    background-color: #2a292e;
     /* Opera GX dark background */
     color: #FF4C4C;
     background-image: url('../img/logo.png');
