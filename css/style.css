@@ -155,6 +155,10 @@ body {
     min-height: 100vh;
     color: #FF4C4C;
     background-color: #2E2F31;
+ 
+   
+
+
 }
 
 /* Adjusted CSS for Main Content */
@@ -168,7 +172,13 @@ body {
     justify-items: center;
     /* Centering the cards horizontally */
     color: #FF4C4C;
+    
     background-color: #2E2F31;
+    background-image: url('../img/backroundtest.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 
 /* Adjusted CSS for Cards */
