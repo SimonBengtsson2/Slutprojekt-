@@ -18,6 +18,12 @@ body {
     border-bottom-right-radius: 20px;
     cursor: pointer;
     color: #FF4C4C;
+    background-image: url('../img/nav.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-position: top;
+    
 }
 
 .nav::before, .nav2::before, .nav3::before, .nav-about::before {
@@ -25,7 +31,7 @@ body {
     display: inline-block;
     width: 10px;
     height: 15px;
-    background-color: #191B1D;
+  
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     margin-right: 10px;
