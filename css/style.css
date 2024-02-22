@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    
+    
 }
 .nav, .nav2, .nav3, .nav-about {
     background-color: #191B1D;
@@ -47,6 +49,7 @@ body {
     min-height: 100vh;
     color: #FF4C4C;
     background-color: #2E2F31;
+    
 }
 
 
@@ -57,6 +60,7 @@ body {
     color: #FF4C4C;
     padding: 10px;
     height: 50px;
+   
 }
 
 .main {
@@ -65,10 +69,12 @@ body {
     background-color: #2a292e;
     /* Opera GX dark background */
     color: #FF4C4C;
+    
     background-image: url('../img/logo.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    background-position: top;
     /* Opera's signature red text color */
 }
 
