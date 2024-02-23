@@ -174,10 +174,7 @@ body {
     color: #FF4C4C;
     
     background-color: #2E2F31;
-    background-image: url('../img/backroundtest.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+   
 
 }
 
@@ -195,6 +192,8 @@ body {
     border: 1px solid #FF4C4C;
     /* Red border */
     font-size: smaller;
+ 
+    
 }
 .card img {
     max-width: 100%; /* Ensure the image doesn't exceed the card width */
@@ -310,6 +309,11 @@ body {
     cursor: pointer;
     /* Change cursor to pointer on hover */
     color: #FF4C4C;
+    background-image: url('../img/nav.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+   
 }
 
 .rekomendation::before {
@@ -317,7 +321,7 @@ body {
     display: inline-block;
     width: 10px;
     height: 15px;
-    background-color: #191B1D;
+   
     border-top-left-radius: 5px;
     /* Rounded corners for the top left */
     border-bottom-left-radius: 5px;
