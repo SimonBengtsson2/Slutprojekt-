@@ -8,6 +8,19 @@ font-style: italic;
     
 }
 
+
+h1{
+    font-family: "roboto-slab", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+h2{
+    font-family: "roboto-slab", serif;
+font-weight: 400;
+font-style: normal;
+}
+
 .nav, .nav2, .nav3, .nav-about {
     background-color: #191B1D;
     padding: 20px;
@@ -79,7 +92,7 @@ font-style: italic;
     background-color: #2a292e;
     /* Opera GX dark background */
     color: #e3dfec;
-    background-image: url('../img/Logo2.jpg');
+    background-image: url('../img/logo2.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -198,8 +211,11 @@ font-style: italic;
     color: #e3dfec;
     border: 1px solid #FF4C4C;
     /* Red border */
-    font-size: smaller;
-    background-image: url('../img/card\ backround.jpg');
+    font-family: "roboto-slab", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:x-small;
+    background-image: url('../img/card\ backround.jpg ');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -358,6 +374,11 @@ font-style: italic;
 
 a {
     color: #e3dfec;
+    font-family: "roboto-slab", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-size: small;
 }
 
 
