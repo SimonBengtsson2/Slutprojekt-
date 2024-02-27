@@ -195,7 +195,10 @@ font-style: normal;
     color: #e3dfec;
     
     background-color: #2E2F31;
-   
+    
+        
+     
+  
 
 }
 
@@ -218,7 +221,7 @@ font-style: normal;
     font-size:x-small;
     background-image: url('../img/card\ backround.jpg ');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
  
     
@@ -239,6 +242,7 @@ font-style: normal;
     height: 50px;
     color: #e3dfec;
     text-align: center;
+    
 }
 
 
@@ -403,6 +407,7 @@ a {
 
 
 .grid-container-about {
+  
     display: grid;
     grid-template-areas:
         "header"
@@ -507,3 +512,5 @@ a {
     display: block;
     margin: auto;
 }
+
+
