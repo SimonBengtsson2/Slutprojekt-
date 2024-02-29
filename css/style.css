@@ -207,7 +207,7 @@ font-style: normal;
     background-color: black;
     border-radius: 70px;
     padding: 20px;
-    text-align: center;
+    text-align:center;
     width: 100px;
     /* Adjust width as needed */
     height: 100px;
@@ -218,7 +218,7 @@ font-style: normal;
     font-family: "roboto-slab", serif;
     font-weight: 400;
     font-style: normal;
-    font-size:x-small;
+    font-size:9px;
     background-image: url('../img/card\ backround.jpg ');
     background-repeat: no-repeat;
     background-size: cover;
@@ -500,7 +500,7 @@ a {
     font-family: "roboto-slab", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: x-small;
+    font-size:9px;
     background-image: url('../img/card\ backround.jpg ');
     background-repeat: no-repeat;
     background-size: contain;
