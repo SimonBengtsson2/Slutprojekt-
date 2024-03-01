@@ -4,7 +4,7 @@ body {
     font-family: "aviano-future", sans-serif;
     font-weight: 400;
     font-style: italic;
-    background-color: #191B1D;
+    background-color: #202122;
 
 
 }
@@ -158,7 +158,7 @@ h2 {
 .nav2,
 .nav3,
 .nav-about {
-    background-color: #191B1D;
+    background-color: #202122;
     padding: 20px;
     position: fixed;
     top: 40px;
@@ -302,12 +302,6 @@ h2 {
     }
 }
 
-
-
-
-
-
-
 .grid-container2 {
     display: grid;
     grid-template-areas:
@@ -337,7 +331,7 @@ h2 {
     justify-items: center;
     /* Centering the cards horizontally */
     color: #e3dfec;
-
+    
     background-color: #2E2F31;
 
 
@@ -485,7 +479,7 @@ h2 {
 
 
 .rekomendation {
-    background-color: #191B1D;
+    background-color: #202122;
 
     padding: 20px;
     position: fixed;
