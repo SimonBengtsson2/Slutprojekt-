@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function() {
             { name: "No Man's Sky", image: "img/no.png", link: "https://www.nomanssky.com/" }
         ],
         strategy: [
-            { name: "League of Legends", image: "img/leauge 2.png", link: "https://www.leagueoflegends.com/en-gb/" },
+            { name: "League of Legends", image: "img/lege.png", link: "https://www.leagueoflegends.com/en-gb/" },
             { name: "Rocket League", image: "img/Rocket.png", link: "https://www.rocketleague.com/en" },
             { name: "Destiny", image: "img/des.png", link: "https://www.bungie.net/7/en/destiny" },
             { name: "World of Warcraft", image: "img/WoW.png", link: "https://worldofwarcraft.blizzard.com/en-us/" },

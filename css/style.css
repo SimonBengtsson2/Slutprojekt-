@@ -662,3 +662,19 @@ a {
     display: block;
     margin: auto;
 }
+
+@media only screen and (max-width: 767px) {
+    .grid-container3 {
+        grid-template-columns: repeat(3, 1fr);
+        /* Three columns for mobile */
+
+    }
+
+    .main3 {
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns for mobile */
+        grid-template-rows: repeat(6, auto);
+        /* Six rows for mobile */
+    }
+
+}
