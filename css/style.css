@@ -331,7 +331,7 @@ h2 {
     justify-items: center;
     /* Centering the cards horizontally */
     color: #e3dfec;
-    
+
     background-color: #2E2F31;
 
 
@@ -545,6 +545,9 @@ a {
     text-decoration: none;
     font-size: small;
 }
+a:hover {
+    text-decoration: underline;
+  }
 
 
 
@@ -628,6 +631,15 @@ a {
         grid-template-rows: auto 1fr auto;
         /* Header, Main Content, Footer */
         min-height: 100vh;
+    }
+    .main-about {
+        grid-area: main-about;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 20px;
+        color: #e3dfec;
+        background-color: #2E2F31;
     }
 
 }
