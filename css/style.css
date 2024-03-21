@@ -221,7 +221,7 @@ h2 {
 .header {
     grid-area: header;
     background-color: #202122;
-    /* Opera GX extra dark background */
+  
     color: #e3dfec;
     padding: 10px;
     height: 50px;
@@ -233,7 +233,7 @@ h2 {
     grid-area: main;
     padding: 20px;
     background-color: #2a292e;
-    /* Opera GX dark background */
+    
     color: #e3dfec;
 
     background-image: url('../img/logo2.jpg');
@@ -242,13 +242,13 @@ h2 {
     background-position: center;
 
 
-    /* Opera's signature red text color */
+    
 }
 
 .footer {
     grid-area: footer;
     background-color: #202122;
-    /* Opera GX extra dark background */
+   
     color: #e3dfec;
     padding: 10px;
     height: 50px;
@@ -274,7 +274,7 @@ h2 {
     .header {
         grid-area: header;
         background-color: #202122;
-        /* Opera GX extra dark background */
+       
         color: #e3dfec;
         padding: 10px;
         height: 50px;
@@ -284,17 +284,16 @@ h2 {
         grid-area: main;
         padding: 20px;
 
-        /* Opera GX dark background */
+      
         color: #e3dfec;
-        /* Opera's signature red text color */
-
+      
         background-color: #2E2F31;
     }
 
     .footer {
         grid-area: footer;
         background-color: #202122;
-        /* Opera GX extra dark background */
+       
         color: #e3dfec;
         padding: 10px;
         height: 50px;
@@ -319,7 +318,6 @@ h2 {
 
 }
 
-/* Adjusted CSS for Main Content */
 .main2 {
     grid-area: main;
     padding: 20px;
@@ -340,7 +338,7 @@ h2 {
 
 }
 
-/* Adjusted CSS for Cards */
+
 .card {
     background-color: black;
     border-radius: 70px;
@@ -433,7 +431,7 @@ h2 {
 
 }
 
-/* Adjusted CSS for Main Content */
+
 .main3 {
     grid-area: main;
     padding: 20px;
