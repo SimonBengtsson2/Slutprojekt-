@@ -9,93 +9,115 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
     <title>Startsida - Desktop</title>
+    <style>
+        /* Add your CSS styles for the mobile navigation menu here */
+        .mobile-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #333;
+            z-index: 999;
+            display: none;
+        }
+
+        @media only screen and (max-width: 767px) {
+         h1{
+        display:none;
+        }
+            .nav {
+                display: none;
+            }
+
+            .mobile-container {
+                display: block;
+            }
+
+            .mobile-container .topnav {
+                background-color: #333;
+                overflow: hidden;
+            }
+
+            .mobile-container .topnav #myLinks {
+                display: none;
+            }
+
+            .mobile-container .topnav a {
+                color: white;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                display: block;
+            }
+
+            .mobile-container .topnav a.icon {
+                background: black;
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .mobile-container .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .mobile-container .active {
+                background-color: #202122;
+                color: white;
+            }
+        }
+      
+    </style>
 </head>
 <body>
     <div class="grid-container">
         <header class="header">
-          <h1>Welcome</h1>
-         
+            <h1>Welcome</h1>
+            <!-- Mobile Navigation -->
+            <div class="mobile-container">
+                <div class="topnav">
+                    <a href="#home" class="active">Welcome</a>
+                    <div id="myLinks">
+                        <a href="Spelinformation.html">Games</a>
+                        <a href="Rekomendation.html">Info</a>
+                        <a href="Aboutus.html">About us</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
         </header>
-        <nav class="nav">
-           
-          <a  href="Spelinformation.html">Games</a> 
-          <a href="Rekomendation.html"> Info</a>
-          <a href="Aboutus.html"> About us</a>
-        </nav>
 
         <main class="main">
             
-         
         </main>
 
+        <!-- Desktop Navigation -->
+        <nav class="nav">
+            <a href="Spelinformation.html">Games</a> 
+            <a href="Rekomendation.html"> Info</a>
+            <a href="Aboutus.html"> About us</a>
+        </nav>
+
         <footer class="footer">
-           
-            <div class="icons">
-                <a href="#">
-                   <div class="layer">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span class="fab fa-facebook-f"></span>
-                   </div>
-                   <div class="text">
-                      Facebook
-                   </div>
-                </a>
-                <a href="#">
-                   <div class="layer">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span class="fab fa-twitter"></span>
-                   </div>
-                   <div class="text">
-                      Twitter
-                   </div>
-                </a>
-                <a href="#">
-                   <div class="layer">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span class="fab fa-instagram"></span>
-                   </div>
-                   <div class="text">
-                      Instagram
-                   </div>
-                </a>
-                <a href="#">
-                   <div class="layer">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span class="fab fa-linkedin-in"></span>
-                   </div>
-                   <div class="text">
-                      Linkedin
-                   </div>
-                </a>
-                <a href="#">
-                   <div class="layer">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span class="fab fa-youtube" ></span>
-                   </div>
-                   <div class="text">
-                      YouTube
-                   </div>
-                </a>
-             </div>
-            <p>&copy; 2024 Titanic GX. All rights reserved.</p>
+            <!-- Your footer content here -->
         </footer>
-        
     </div>
-    <script src="js/main.js"> </script>
+    
+    <script src="js/main.js"></script>
+    <script>
+        // JavaScript function to toggle the mobile navigation menu
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>

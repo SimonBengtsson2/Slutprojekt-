@@ -159,6 +159,7 @@ h2 {
 .nav3,
 .nav-about {
     background-color: #202122;
+    
     padding: 20px;
     position: fixed;
     top: 40px;
@@ -166,15 +167,14 @@ h2 {
     width: 200px;
     overflow-y: auto;
     transition: left 0.3s ease;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     cursor: pointer;
     color: #e3dfec;
-    background-image: url('../img/nav.png');
+    background-image: url('../img/icon.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-position: top;
+    background-position: right top;
+    background-size: auto 80%; /* Adjust the background-size property */
 
 
 }
@@ -192,6 +192,7 @@ h2 {
     border-bottom-left-radius: 5px;
     margin-right: 10px;
     color: #e3dfec;
+    background-image: url('../img/nav.jpg');
 }
 
 .nav.open,
@@ -201,6 +202,8 @@ h2 {
     height: calc(100vh - 120px);
     top: 40px;
     color: #e3dfec;
+    background-image: url('../img/nav.jpg');
+    background-size: auto 100%; /* Adjust the background-size property */
 }
 
 .grid-container {
@@ -498,7 +501,7 @@ h2 {
     cursor: pointer;
     /* Change cursor to pointer on hover */
     color: #e3dfec;
-    background-image: url('../img/nav.png');
+    background-image: url('../img/nav.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
