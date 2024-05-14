@@ -320,63 +320,69 @@ h2 {
 
 
 }
-
 .main2 {
     grid-area: main;
     padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, auto);
-    /* Three rows */
-    grid-gap: 20px;
-    justify-items: center;
-    /* Centering the cards horizontally */
-    color: #e3dfec;
-
-    background-color: #2E2F31;
-
-
-
-
-
+    display: flex;
+    justify-content: flex-end; /* Align main content to the right */
+    
+    align-items: center;
+    overflow: hidden;
+    position: relative; /* Ensure z-index works correctly */
+}
+.card1:hover,.card2:hover, .card3:hover,.card4:hover,.card5:hover,.card6:hover {
+    transform: translate(25%, 25%) scale(1.5); /* Move to center and expand */
+    z-index: 100;
+    position: relative;
 }
 
+.card7:hover,.card8:hover, .card9:hover,.card10:hover,.card11:hover,.card12:hover {
+    transform: translate(25%, -25%) scale(1.5); /* Move to center and expand */
+    z-index: 100;
+    position: relative;
+}
+.deck:hover .card {
+    opacity: 0.5; /* Dim other cards when one is expanded */
+}
+
+.deck:hover .card:hover {
+    opacity: 1; /* Keep the hovered card at full opacity */
+}
 
 .card {
-    background-color: black;
-    border-radius: 70px;
-    padding: 20px;
-    text-align: center;
-    width: 100px;
-    /* Adjust width as needed */
-    height: 100px;
-    /* Ensure square dimensions */
-    color: #e3dfec;
-    border: 1px solid #FF4C4C;
-    /* Red border */
-    font-family: "roboto-slab", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 9px;
-    background-image: url('../img/card\ backround.jpg ');
-    background-repeat: no-repeat;
-    background-size: cover;
+    z-index: 0;
+    width: 120px; /* Adjust card width */
+    height: 180px; /* Adjust card height */
+    margin: 0 10px; /* Adjust spacing between cards */
+    background-image: url('../img/card\ backround.jpg');
+    background-size: contain;
     background-position: center;
-
-
-
+    border-radius: 20px;
+    border: 1px solid #FF4C4C;
+    overflow: hidden;
+    transition: transform 0.3s, opacity 0.3s; /* Add opacity transition */
+    position: relative; /* Ensure z-index works correctly */
+    
 }
 
 .card img {
-    max-width: 100%;
-    /* Ensure the image doesn't exceed the card width */
-    max-height: 100%;
-    /* Ensure the image doesn't exceed the card height */
-    display: block;
-    /* Remove any default spacing */
-    margin: auto;
-    /* Center the image horizontally */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
+
+.deck {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Create two columns with equal width */
+    gap: 20px; /* Adjust the gap between cards */
+    justify-content: flex-end; /* Align items to the right */
+    align-items: flex-start; /* Align items to the top */
+    max-width: calc(100vw - 40px); /* Set maximum width to ensure all cards fit on the screen */
+   
+    margin: 0 auto; /* Center the deck */
+    
+}
+
 
 .header2 {
     grid-area: header;
@@ -410,14 +416,68 @@ h2 {
 
     }
 
-    .main2 {
-        grid-template-columns: repeat(2, 1fr);
-        /* Two columns for mobile */
-        grid-template-rows: repeat(6, auto);
-        /* Six rows for mobile */
+    
+    .card1:hover,.card3:hover, .card5:hover,.card7:hover,.card9:hover {
+        transform: translate(25%, 25%) scale(1.5); /* Move to center and expand */
+        z-index: 100;
+        position: relative;
     }
+    
+    .card2:hover,.card4:hover, .card6:hover,.card8:hover,.card10:hover {
+        transform: translate(-25%, 25%) scale(1.5); /* Move to center and expand */
+        z-index: 100;
+        position: relative;
+    }
+ 
+    .card11:hover
+    {
+        transform: translate(25%, -25%) scale(1.5); /* Move to center and expand */
+        z-index: 100;
+        position: relative; }
 
+        .card12:hover
+    {
+        transform: translate(-25%,- 25%) scale(1.5); /* Move to center and expand */
+        z-index: 100;
+        position: relative; }
+
+
+        
+    .card {
+        z-index: 0;
+        width: 120px; /* Adjust card width */
+        height: 100px; /* Adjust card height */
+        margin: 0 10px; /* Adjust spacing between cards */
+        background-image: url('../img/card\ backround.jpg');
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        border: 1px solid #FF4C4C;
+        overflow: hidden;
+        transition: transform 0.3s, opacity 0.3s; /* Add opacity transition */
+        position: relative; /* Ensure z-index works correctly */
+        
+    }
+    
+    .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    
+    .deck {
+        display: grid;
+        grid-template-columns: repeat(2, 6fr); /* Create two columns with equal width */
+        gap: 20px; /* Adjust the gap between cards */
+        justify-content: flex-end; /* Align items to the right */
+        align-items: flex-start; /* Align items to the top */
+        max-width: calc(100vw - 40px); /* Set maximum width to ensure all cards fit on the screen */
+       
+        margin: 0 auto; /* Center the deck */
+    }
 }
+
+
 
 
 
