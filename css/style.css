@@ -5,7 +5,7 @@ body {
     font-weight: 400;
     font-style: italic;
     background-color: #202122;
-
+    scroll-behavior: smooth;
 
 }
 
@@ -355,7 +355,7 @@ h2 {
     height: 180px; /* Adjust card height */
     margin: 0 10px; /* Adjust spacing between cards */
     background-image: url('../img/card\ backround.jpg');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     border-radius: 20px;
     border: 1px solid #FF4C4C;
@@ -505,6 +505,7 @@ h2 {
     /* Centering the cards horizontally */
     color: #e3dfec;
     background-color: #2E2F31;
+    
     background-image: url('../img/rec.png');
     background-repeat: no-repeat;
     background-size: cover;
