@@ -203,3 +203,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Event listener for search button click
     searchButton.addEventListener('click', renderRecommendations);
 });
+
+
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}

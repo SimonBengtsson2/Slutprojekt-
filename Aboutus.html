@@ -8,67 +8,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/wbq6kph.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <title>About Us </title>
-    <style>
-      /* Add your CSS styles for the mobile navigation menu here */
-      .mobile-container {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          background-color: #333;
-          z-index: 999;
-          display: none;
-      }
-
-      @media only screen and (max-width: 767px) {
-       h1{
-      display:none;
-      }
-          .nav-about {
-              display: none;
-          }
-
-          .mobile-container {
-              display: block;
-          }
-
-          .mobile-container .topnav {
-              background-color: #333;
-              overflow: hidden;
-          }
-
-          .mobile-container .topnav #myLinks {
-              display: none;
-          }
-
-          .mobile-container .topnav a {
-              color: white;
-              padding: 14px 16px;
-              text-decoration: none;
-              font-size: 17px;
-              display: block;
-          }
-
-          .mobile-container .topnav a.icon {
-              background: black;
-              display: block;
-              position: absolute;
-              right: 0;
-              top: 0;
-          }
-
-          .mobile-container .topnav a:hover {
-              background-color: #ddd;
-              color: black;
-          }
-
-          .mobile-container .active {
-              background-color: #202122;
-              color: white;
-          }
-      }
     
-  </style>
 </head>
 <body>
     <div class="grid-container-about">
@@ -183,16 +123,6 @@
         </footer-about>
     </div>
     <script src="js/main.js"></script>
-    <script>
-      // JavaScript function to toggle the mobile navigation menu
-      function myFunction() {
-          var x = document.getElementById("myLinks");
-          if (x.style.display === "block") {
-              x.style.display = "none";
-          } else {
-              x.style.display = "block";
-          }
-      }
-  </script> 
+   
 </body>
 </html>
