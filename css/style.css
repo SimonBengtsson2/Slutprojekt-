@@ -9,7 +9,6 @@ body {
 
 }
 
-
 h1 {
     font-family: "roboto-slab", serif;
     font-weight: 400;
@@ -320,6 +319,8 @@ h2 {
 
 
 }
+
+
 .main2 {
     grid-area: main;
     padding: 20px;
@@ -368,7 +369,7 @@ h2 {
 .card img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    background-size: contain;
 }
 
 .deck {
@@ -462,7 +463,7 @@ h2 {
     .card img {
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        background-size: contain;
     }
     
     .deck {
